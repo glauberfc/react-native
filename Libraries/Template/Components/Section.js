@@ -1,6 +1,5 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
-import PropTypes from 'prop-types'
 
 const Section = ({ title, description }) => (
   <View style={styles.container}>
@@ -8,11 +7,6 @@ const Section = ({ title, description }) => (
     <Text style={styles.description}>{description}</Text>
   </View>
 )
-
-Section.propTypes = {
-  title: PropTypes.string,
-  description: PropTypes.string,
-}
 
 const styles = StyleSheet.create({
   container: {
