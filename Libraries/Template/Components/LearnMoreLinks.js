@@ -1,6 +1,8 @@
 import React, { Fragment } from 'react'
 import { View, Text, StyleSheet, TouchableOpacity, Linking } from 'react-native'
 
+import colors from '../colors'
+
 const links = [
   {
     title: 'The Basics',
@@ -50,6 +52,7 @@ const LinkList = () => (
         <Fragment key={index}>
           <View style={styles.separator} />
           <TouchableOpacity
+            accessibilityRole={'button'}
             onPress={() => Linking.openURL(item.link)}
             style={styles.linkContainer}
           >
@@ -78,7 +81,7 @@ const styles = StyleSheet.create({
     flex: 2,
     fontSize: 18,
     fontWeight: '400',
-    color: '#1292B4',
+    color: colors.primary,
   },
   description: {
     flex: 3,
@@ -88,7 +91,7 @@ const styles = StyleSheet.create({
     color: '#333',
   },
   separator: {
-    backgroundColor: '#DAE1E7',
+    backgroundColor: colors.light,
     height: 1,
   },
 })

@@ -12,6 +12,7 @@ import {
 import Header from './components/Header'
 import Section from './components/Section'
 import LearnMoreLinks from './components/LearnMoreLinks'
+import colors from './colors'
 
 function ReloadInstructions() {
   return Platform.OS === 'ios' ? (
@@ -92,25 +93,25 @@ const App = () => {
 const styles = StyleSheet.create({
   topSafeArea: {
     flex: 0,
-    backgroundColor: '#F3F3F3',
+    backgroundColor: colors.lighter,
   },
   bottomSafeArea: {
     flex: 1,
-    backgroundColor: '#FFF',
+    backgroundColor: colors.white,
   },
   body: {
-    backgroundColor: '#FFF',
+    backgroundColor: colors.white,
   },
   sectionTitle: {
     fontSize: 24,
     fontWeight: '600',
-    color: '#000',
+    color: colors.black,
   },
   sectionDescription: {
     marginTop: 8,
     fontSize: 18,
     fontWeight: '400',
-    color: '#444',
+    color: colors.dark,
   },
   highlight: {
     fontWeight: '700',
