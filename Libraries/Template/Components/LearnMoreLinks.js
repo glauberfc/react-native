@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { View, Text, StyleSheet, TouchableOpacity, Linking } from 'react-native'
 
 const links = [
@@ -47,7 +47,7 @@ const LinkList = () => (
   <View style={styles.container}>
     {links.map((item, index) => {
       return (
-        <View key={index}>
+        <Fragment key={index}>
           <View style={styles.separator} />
           <TouchableOpacity
             onPress={() => Linking.openURL(item.link)}
@@ -56,7 +56,7 @@ const LinkList = () => (
             <Text style={styles.link}>{item.title}</Text>
             <Text style={styles.description}>{item.description}</Text>
           </TouchableOpacity>
-        </View>
+        </Fragment>
       )
     })}
   </View>
@@ -75,13 +75,13 @@ const styles = StyleSheet.create({
     paddingVertical: 8,
   },
   link: {
-    width: '40%',
+    flex: 2,
     fontSize: 18,
     fontWeight: '400',
     color: '#1292B4',
   },
   description: {
-    width: '60%',
+    flex: 3,
     paddingVertical: 16,
     fontWeight: '400',
     fontSize: 18,
