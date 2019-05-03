@@ -11,7 +11,7 @@ import {
 
 import Header from './components/Header'
 import Section from './components/Section'
-import LinkList from './components/LinkList'
+import LearnMoreLinks from './components/LearnMoreLinks'
 
 function ReloadInstructions() {
   return Platform.OS === 'ios' ? (
@@ -81,7 +81,7 @@ const App = () => {
               </Text>
             </Section>
 
-            <LinkList />
+            <LearnMoreLinks />
           </View>
         </ScrollView>
       </SafeAreaView>
