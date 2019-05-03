@@ -14,9 +14,11 @@ const Header = () => (
 
 const styles = StyleSheet.create({
   container: {
-    height: 270,
     alignItems: 'center',
     justifyContent: 'center',
+    paddingTop: 96,
+    paddingBottom: 24,
+    paddingHorizontal: 32,
     backgroundColor: '#F3F3F3',
   },
   backgroundLogo: {
@@ -30,7 +32,6 @@ const styles = StyleSheet.create({
     width: 540,
   },
   text: {
-    maxWidth: 250,
     fontSize: 40,
     fontWeight: '600',
     textAlign: 'center',
