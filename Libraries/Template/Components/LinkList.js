@@ -6,7 +6,7 @@ const links = [
     title: 'The Basics',
     link: 'https://facebook.github.io/react-native/docs/tutorial',
     description:
-      'Read the docs on what do do once seeing how to work in React Native.',
+      'Read the docs on what to do once seen how to work in React Native.',
   },
   {
     title: 'Style',
